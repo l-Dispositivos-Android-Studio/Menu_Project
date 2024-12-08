@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
     id("kotlin-parcelize")
+    id("androidx.navigation.safeargs.kotlin") version "2.5.3"
 }
 
 android {
@@ -41,6 +42,9 @@ android {
 }
 
 dependencies {
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

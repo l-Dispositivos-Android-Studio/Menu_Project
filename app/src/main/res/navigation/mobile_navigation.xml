@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +8,13 @@
         android:id="@+id/navigation_home"
         android:name="com.forever3.proyectofinal.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+
+        <!-- Aquí agregamos la acción hacia el fragmento de detalles -->
+        <action
+            android:id="@+id/action_homeFragment_to_detallesInvestigacionFragment"
+            app:destination="@id/detallesInvestigacionFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_add"
@@ -29,5 +34,10 @@
         android:label="@string/title_logout"
         tools:layout="@layout/fragment_logout" />
 
-
+    <!-- Fragmento de detallesInvestigacionFragment -->
+    <fragment
+        android:id="@+id/detallesInvestigacionFragment"
+        android:name="com.forever3.proyectofinal.ui.home.detallesInvestigacionFragment"
+        android:label="Detalles de Investigación"
+        tools:layout="@layout/fragment_detalles_investigacion" />
 </navigation>

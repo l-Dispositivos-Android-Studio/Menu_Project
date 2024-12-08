@@ -10,7 +10,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-
     <string name="app_title">Lista de Investigaciones</string>
 
     <!--parte de la guia-->
@@ -105,16 +104,6 @@
         <item>3°Grado</item>
         <item>4°Grado</item>
     </string-array>
-
-
-
-
-
-
-
-
-
-
 
 
 </resources>
